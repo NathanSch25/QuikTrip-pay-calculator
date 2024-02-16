@@ -1,0 +1,52 @@
+from outputs.Outputs import Output
+
+class A1:
+    def A1calc():
+        hours = float(input("how many hours were worked: "))
+        rate = 22.79
+
+        tempList = []
+        tempList = Output.GroseCalc(hours, rate), A1.TBonus1A()
+        finalList = tempList[0][0], tempList[0][1], tempList[1][0], tempList[1][1], finalList[0][2]
+        
+        print(finalList)
+        O1 = Output(finalList[0], finalList[1], ((hours*52) / 12), 460, finalList[2], finalList[3], finalList[4])
+        O1.Complete()
+        
+    def TBonus1A():
+        TBonusAnual = 0
+        TBonusQuarter = 0
+        off = -1
+        
+        while off < 0:
+            off = int(input(" how many days have you requested off this year? "))
+        print('\n \n \n')
+        if off <= 3:
+            TBonusAnual = 3624.96
+            TBonusQuarter = 453.12
+        elif off == 6:
+            TBonusAnual = 3262.46
+            TBonusQuarter = 339.84
+        elif off == 9:
+            TBonusAnual = 3044.97
+            TBonusQuarter = 226.56
+        elif off == 10:
+            TBonusAnual = 2827.47
+            
+        elif off == 11:
+            TBonusAnual = 2646.22
+            
+        elif off == 12:
+            TBonusAnual = 2428.72
+            
+        elif off == 13:
+            TBonusAnual = 2211.22
+            
+        elif off == 14:
+            TBonusAnual = 2029.98
+            
+        elif off >= 15:
+            TBonusAnual = 1812.48
+            
+        
+        return (TBonusAnual, TBonusQuarter)
