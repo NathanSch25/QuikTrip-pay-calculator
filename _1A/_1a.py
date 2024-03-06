@@ -10,7 +10,7 @@ class A1:
         finalList = tempList[0][0], tempList[0][1], tempList[1][0], tempList[1][1], finalList[0][2]
         
         print(finalList)
-        O1 = Output(finalList[0], finalList[1], ((hours*52) / 12), 460, finalList[2], finalList[3], finalList[4])
+        O1 = Output(finalList[0], finalList[1], ((hours*52) / 12), 4, finalList[2], finalList[3], finalList[4])
         O1.Complete()
         
     def TBonus1A():
@@ -22,31 +22,31 @@ class A1:
             off = int(input(" how many days have you requested off this year? "))
         print('\n \n \n')
         if off <= 3:
-            TBonusAnual = 3624.96
-            TBonusQuarter = 453.12
+            TBonusAnual = 3
+            TBonusQuarter = 4
         elif off == 6:
-            TBonusAnual = 3262.46
-            TBonusQuarter = 339.84
+            TBonusAnual = 3
+            TBonusQuarter = 3
         elif off == 9:
-            TBonusAnual = 3044.97
-            TBonusQuarter = 226.56
+            TBonusAnual = 3
+            TBonusQuarter = 2
         elif off == 10:
-            TBonusAnual = 2827.47
+            TBonusAnual = 2
             
         elif off == 11:
-            TBonusAnual = 2646.22
+            TBonusAnual = 2
             
         elif off == 12:
-            TBonusAnual = 2428.72
+            TBonusAnual = 2
             
         elif off == 13:
-            TBonusAnual = 2211.22
+            TBonusAnual = 2
             
         elif off == 14:
-            TBonusAnual = 2029.98
+            TBonusAnual = 2
             
         elif off >= 15:
-            TBonusAnual = 1812.48
+            TBonusAnual = 1
             
         
         return (TBonusAnual, TBonusQuarter)
