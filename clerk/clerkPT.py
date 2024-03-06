@@ -32,6 +32,6 @@ class ClerkPT:
 
         tList = ()
         tList = Output.GroseCalc(hours, rate, erp)
-        O1 = Output(tList[0], tList[1], ((hours*52) / 12), 100, tList[2])
+        O1 = Output(tList[0], tList[1], ((hours*52) / 12), 1, tList[2])
         O1.Advanced()
         
