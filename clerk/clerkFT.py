@@ -32,7 +32,7 @@ class ClerkFT:
         finalList = tempList[0][0], tempList[0][1], tempList[1][0], tempList[1][1], tempList[0][2]
         
         print(finalList)
-        O1 = Output(finalList[0], finalList[1], ((hours*52) / 12), 250, finalList[2], finalList[3], finalList[4])
+        O1 = Output(finalList[0], finalList[1], ((hours*52) / 12), 2, finalList[2], finalList[3], finalList[4])
         O1.Complete()
         
     def TBonusFT():
@@ -44,31 +44,31 @@ class ClerkFT:
             off = int(input(" how many days have you requested off this year? "))
         print('\n \n \n')
         if off <= 3:
-            TBonusAnual = 1969.11
-            TBonusQuarter = 246.14
+            TBonusAnual = 1
+            TBonusQuarter = 2
         elif off == 6:
-            TBonusAnual = 1772.21
-            TBonusQuarter = 184.60
+            TBonusAnual = 1
+            TBonusQuarter = 1
         elif off == 9:
-            TBonusAnual = 1654.06
-            TBonusQuarter = 123.07
+            TBonusAnual = 1
+            TBonusQuarter = 1
         elif off == 10:
-            TBonusAnual = 1535.91
+            TBonusAnual = 1
             
         elif off == 11:
-            TBonusAnual = 1437.45
+            TBonusAnual = 1
             
         elif off == 12:
-            TBonusAnual = 1319.30
+            TBonusAnual = 1
             
         elif off == 13:
-            TBonusAnual = 1201.15
+            TBonusAnual = 1
             
         elif off == 14:
-            TBonusAnual = 1102.70
+            TBonusAnual = 1
             
         elif off >= 15:
-            TBonusAnual = 984.56
+            TBonusAnual = 9
             
         
         return (TBonusAnual, TBonusQuarter)
